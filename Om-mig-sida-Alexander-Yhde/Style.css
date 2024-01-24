@@ -1,0 +1,26 @@
+.Top_menu{
+    background-color: #333;
+    overflow: hidden;
+}
+
+.Rubriker{
+    text-align: center;
+    color: white;
+}
+
+body{
+    background-color: rgb(63, 63, 63);
+}
+
+.Bild{
+    float: right;
+    width: 300px;
+    display: inline;
+    border: 6px solid #333;
+}
+
+p{
+    color: rgb(205, 205, 205);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
