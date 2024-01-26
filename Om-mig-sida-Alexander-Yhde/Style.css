@@ -1,6 +1,8 @@
 .Top_menu{
     background-color: #333;
     overflow: hidden;
+    position: sticky;
+    top: 0;
 }
 
 .Rubriker{
@@ -10,6 +12,7 @@
 
 body{
     background-color: rgb(63, 63, 63);
+    background-image: url(Background.avif);
 }
 
 .Bild{
@@ -23,4 +26,9 @@ body{
     color: rgb(205, 205, 205);
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+a:hover{
+    color: blue;
+    text-decoration: underline;
 }
