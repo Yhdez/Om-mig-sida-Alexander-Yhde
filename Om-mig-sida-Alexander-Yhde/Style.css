@@ -15,11 +15,22 @@ body{
     background-image: url(Background.avif);
 }
 
+@keyframes bild_animation { 
+    0%  {opacity: 0;}
+    25%  {opacity: 0,25;}
+    50%  {opacity: 0,5;}
+    75%  {opacity: 0,75;}
+    100%  {opacity: 1;}
+}
+
 .Bild{
     float: right;
     width: 300px;
     display: inline;
     border: 6px solid #333;
+    margin: 8px;
+    animation-name: bild_animation;
+    animation-duration: 10s;
 }
 
 .Text_vid_bild{
