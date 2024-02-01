@@ -3,9 +3,10 @@
     overflow: hidden;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
-.Rubriker{
+#Rubriker{
     text-align: center;
     color: white;
 }
@@ -24,8 +25,7 @@ body{
 }
 
 .Bild{
-    float: right;
-    width: 300px;
+    height: 300px;
     display: inline;
     border: 6px solid #333;
     margin: 8px;
@@ -42,4 +42,19 @@ body{
 a:hover{
     color: blue;
     text-decoration: underline;
+}
+
+.Huvud_text{
+    display: flex;
+    justify-content: center;
+}
+
+.Filmer_text{
+  color: rgb(205, 205, 205);
+  font-size: 18px;
+}
+
+.Film_layout{
+  display: flex;
+  flex-direction: column;
 }
