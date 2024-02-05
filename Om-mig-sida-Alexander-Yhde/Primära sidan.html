@@ -8,39 +8,73 @@
 </head>
 <body>
 
-<div class = "Top_menu">  
-   <h1 id="Rubriker">Alexander Yhde</h1>
+<!--Top delen av programmet där det står Alexander och det finns klickbara länkar till delar av sidan-->
+<div class = "Full_Top_menu sticky">
+ <div class = "Top_menu">  
+   <h1 id="Rubriker" class ="Alexander_namn_bild"><img src="Alexander.png" alt="Alexander (namn)"></h1>
+ </div>
+
+ <div class = "Sida_länkar"> <!--id inom (Sida_länkar) sköter vart på sidan användaren ska befinna sig ifall den trycker på länken-->
+   <div><a class="Allmän_text Sid_länk" href="#top"> Om mig </a></div>
+   <div><a class="Allmän_text Sid_länk" href="#Favorit_filmer_id"> Top 3 Filmer </a></div>
+   <div><a class="Allmän_text Sid_länk" href="#Kontakt_information_id"> Kontakt Information </a></div>
+ </div>
 </div>
-<div class="Huvud_text">
- <div class = "Text_vid_bild"><p>
-   Mitt Namn är Alexander Yhde, jag bor i Sollentuna. Jag är en elev på <a class = "Text_vid_bild" href="https://www.taby.se/ava-gymnasium/"target="_blank">Åva gymnasium</a>, medie och information
+
+<!--Om mig delen av sidan, med personlig beskrivning samt informerade bild-->
+<div class= center_text>
+ <div class = "Allmän_text"><p>
+   Mitt Namn är Alexander Yhde, jag bor i Sollentuna. Jag är en elev på <a class = "Allmän_text Ava_länk" href="https://www.taby.se/ava-gymnasium/"target="_blank">Åva gymnasium</a>, Information och medieteknik
    och går i klassen TE22A. Mina favorit fritidintressen inkluderar:
    <ul>
       <li>Datorspel</li>
       <li>Badmintion</li>
       <li>Filmer</li>
+      <li>Programmering</li>
    </ul>
  </p></div>
  <div><img class = "Bild" src="Bild På mig.jpg" alt="Bild på Alexander Yhde"></div>
 </div>
 
+<!--Top 3 filmer delen av sidan, innehåller länkar som är bilder-->
 <h1 id = "Rubriker">Mina Top 3 filmer</h1>
 <hr>
-<div class="Huvud_text Filmer_text">
-   <div class = "Film_layout">
-     <img class = "Bild" src="Matrix Bild.jpg" alt="Poster av filmen Matrix (1999)">
+<div class="center_text Allmän_text" id = "Favorit_filmer_id" >
+   <div>
+     <a class = "Imdb_länkar" href="https://www.imdb.com/title/tt0133093/"target="_blank"><img class = "Bild imdb_länk" src="Matrix Bild.jpg" alt="Poster av filmen Matrix (1999)"></a>
      <p>Matrix (1999)</p>
    </div>
-   <div class = "Film_layout">
-      <img class = "Bild" src="Inception Bild.jpg" alt="Poster av filmen Inception (2010)">
+   <div>
+      <a class = "Imdb_länkar" href="https://www.imdb.com/title/tt1375666/"target="_blank"><img class = "Bild imdb_länk" src="Inception Bild.jpg" alt="Poster av filmen Inception (2010)"></a>
       <p>Inception (2010)</p>
     </div>
-    <div class = "Film_layout">
-      <img class = "Bild" src="The Shining Bild.jpg" alt="Poster av filmen The Shining (1980)">
+    <div>
+      <a class = "Imdb_länkar" href="https://www.imdb.com/title/tt0081505/"target="_blank"><img class = "Bild imdb_länk" src="The Shining Bild.jpg" alt="Poster av filmen The Shining (1980)"></a>
       <p>The Shining (1980)</p>
     </div>
-   
 </div>
+<br>
+
+<!--Understa delen av sidan, innehåller text i list format med kontakt information-->
+<h1 id="Rubriker">Kontakt information</h1>
+<div class="Allmän_text Kontakt_information_text"  id=Kontakt_information_id>
+  <div>
+      <br>
+      <dl>
+       <dt>Email</dt>
+       <br>
+       <dd>Alexander.Yhde@skola.taby.se</dd>
+       <dd>Alexander.Yhde@gmail.com</dd>
+      </dl>
+  </div>
+  <div>
+      <br>
+      <dl>
+       <dt>Mobilnummer</dt>
+       <br>
+       <dd>072-332-00-64</dd>  
+      </dl>   
+   </div>  
 </div>
 </body>
 </html>

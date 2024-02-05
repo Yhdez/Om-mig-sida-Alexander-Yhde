@@ -1,22 +1,40 @@
+.Full_Top_menu{ /*Gruppering av klassen Top_menu och Sida_länkar, längst up på sidan*/
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+}
+
 .Top_menu{
     background-color: #333;
     overflow: hidden;
-    position: sticky;
-    top: 0;
-    z-index: 10;
 }
 
-#Rubriker{
+.Alexander_namn_bild{
+    height: 75px;
+}
+
+.Sida_länkar{
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.center_text{
+    display: flex;
+    justify-content: center;
+}
+
+#Rubriker{ /*Id som sköter Rubrikers utseende*/
     text-align: center;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    background-color: rgb(63, 63, 63);
+body{ /*Bakgrunds bild*/
     background-image: url(Background.avif);
 }
 
-@keyframes bild_animation { 
+@keyframes bild_animation { /*Bild animation ansvarig för att öka transparensen av bilderna vid starten av sidan*/
     0%  {opacity: 0;}
     25%  {opacity: 0,25;}
     50%  {opacity: 0,5;}
@@ -24,37 +42,41 @@ body{
     100%  {opacity: 1;}
 }
 
-.Bild{
+.Bild{ /*Allmän information för bild objekt*/
     height: 300px;
     display: inline;
     border: 6px solid #333;
+    border-radius: 7%;
     margin: 8px;
     animation-name: bild_animation;
     animation-duration: 10s;
 }
 
-.Text_vid_bild{
+.Allmän_text{ /*Den allmäna texten för majoriteten av text*/
     color: rgb(205, 205, 205);
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
 }
-a:hover{
+
+/*Länkar som ska lysa, när muspekaren befinner sig över dem*/
+.Ava_länk:hover{
     color: blue;
     text-decoration: underline;
 }
 
-.Huvud_text{
+.imdb_länk:hover{
+    filter: contrast(200%);
+    filter: brightness(140%);
+}
+
+.Sid_länk:hover{
+    color: white;
+}
+
+/*Understa delen av sidan (Kontakt information del)*/
+.Kontakt_information_text{
+    background-color: #333;
     display: flex;
-    justify-content: center;
-}
-
-.Filmer_text{
-  color: rgb(205, 205, 205);
-  font-size: 18px;
-}
-
-.Film_layout{
-  display: flex;
-  flex-direction: column;
+    justify-content: space-between;
 }
