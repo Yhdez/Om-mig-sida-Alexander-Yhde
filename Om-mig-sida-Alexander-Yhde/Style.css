@@ -59,6 +59,10 @@ body{ /*Bakgrunds bild*/
     text-decoration: none;
 }
 
+.Text_shadow{ /*Skugga under text*/
+    text-shadow: 5px 5px 10px black;
+}
+
 /*Länkar som ska lysa, när muspekaren befinner sig över dem*/
 .Ava_länk:hover{
     color: blue;
